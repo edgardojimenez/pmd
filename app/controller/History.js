@@ -3,37 +3,10 @@
     config: {
         stores: ['Histories'],
 
-        //control: {
-        //    '.sliderfield': {
-        //        change: 'onSliderChange'
-        //    }
-        //},
-
-        //refs: {
-        //    durationSlider: {
-        //        selector: '#durationSlider',
-        //        //autoCreate: true
-        //    },
-        //    strengthSlider: {
-        //        selector: '#strengthSlider',
-        //        //autoCreate: true
-        //    },
-        //    bodyPartsSelect: {
-        //        selector: '#bodyPartsSelect',
-        //        //autoCreate: true
-        //    }
-        //},
-
         historyData: null
     },
 
     init: function () {
-        var me = this;
-
-        //me.application.on({
-        //    individualidentified: me.onIndividualIdentified,
-        //    scope: me
-        //});
     },
 
     launch: function () {

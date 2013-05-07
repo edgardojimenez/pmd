@@ -12,15 +12,12 @@
         refs: {
             durationSlider: {
                 selector: '#durationSlider'
-                //autoCreate: true
             },
             strengthSlider: {
                 selector: '#strengthSlider'
-                //autoCreate: true
             },
             bodyPartsSelect: {
                 selector: '#bodyPartsSelect'
-                //autoCreate: true
             }
         },
         
@@ -28,12 +25,6 @@
     },
     
     init: function () {
-        var me = this;
-
-        //me.application.on({
-        //    individualidentified: me.onIndividualIdentified,
-        //    scope: me
-        //});
     },
     
     launch: function () {
@@ -80,5 +71,4 @@
             }
         });
     }
-    
 });

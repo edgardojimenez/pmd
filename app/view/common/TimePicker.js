@@ -5,49 +5,36 @@ Ext.define('PMD.view.common.TimePicker', {
     extend: 'Ext.field.DatePicker',
     xtype: 'timepickerfield',
 
-
     requires: ['PMD.view.common.picker.Time'],
 
-
     config: {
-        dateFormat: 'h:i A', //Default format show time only
+        dateFormat: 'h:i A', 
         picker: true
     },
 
-
-    /**
-     * @override
-     * @param value
-     * Source copied, small modification
-     */
     applyValue: function (value) {
         if (!Ext.isDate(value) && !Ext.isObject(value)) {
             value = null;
         }
 
-
-        // Begin modified section
         if (Ext.isObject(value)) {
             var date = new Date(),
-                year = value.year || date.getFullYear(), // Defaults to current year if year was not supplied etc..
+                year = value.year || date.getFullYear(), 
                 month = value.month || date.getMonth(),
                 day = value.day || date.getDate();
 
 
-            value = new Date(year, month, day, value.hours, value.minutes); //Added hour and minutes
+            value = new Date(year, month, day, value.hours, value.minutes); 
         }
-        // End modfied section!
         return value;
     },
 
-
     applyPicker: function (picker) {
         picker = Ext.factory(picker, 'PMD.view.common.picker.Time');
-        picker.setHidden(true); // Do not show picker on creeation
+        picker.setHidden(true); 
         Ext.Viewport.add(picker);
         return picker;
     },
-
 
     updatePicker: function (picker) {
         picker.on({

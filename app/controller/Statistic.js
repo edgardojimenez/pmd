@@ -74,42 +74,12 @@
     
     onToggleCharts: function (container, button, pressed) {
         var me = this, charts, i;
-        //charts = me.carousel.query('chart');
+        
         if (pressed === true && button.getId() === 'lineChart') {
             me.setChartType('line');
-            //for (i = 0; i < charts.length; i++) {
-            //    //charts[i].setSeries([
-            //    //    {
-            //    //        type: 'line',
-            //    //        xField: 'name',
-            //    //        yField: 'value',
-            //    //        style: {
-            //    //            fill: 'rgba(0,40,170,0.3)',
-            //    //            stroke: 'black'
-            //    //        }
-            //    //    }
-            //    //]);
-            //    //charts[i].setData(me.getWeekData());
-            //    //charts[i].redraw();
-            //}
         }
         if (pressed === true && button.getId() === 'barChart') {
             me.setChartType('bar');
-            //for (i = 0; i < charts.length; i++) {
-            //    //charts[i].setSeries([
-            //    //    {
-            //    //        type: 'bar',
-            //    //        xField: 'name',
-            //    //        yField: 'value',
-            //    //        style: {
-            //    //            fill: 'rgba(0,40,170,0.3)',
-            //    //            stroke: 'black'
-            //    //        }
-            //    //    }
-            //    //]);
-            //    //charts[i].redraw();
-
-            //}
         }
     },
     
@@ -123,7 +93,6 @@
                 },
                 
                 animate: false,
-                //interactions: ['panzoom'],
                 insetPadding: {top: 26, left: 0, right: 4, bottom: 30},
                 series: [
                     {
