@@ -1,0 +1,9 @@
+﻿[
+    { id: 1, part: 'Head' },
+    { id: 2, part: 'Stomach' },
+    { id: 3, part: 'Knees' },
+    { id: 4, part: 'Legs' },
+    { id: 5, part: 'Arms' },
+    { id: 6, part: 'Feet' },
+    { id: 7, part: 'Back' }
+]
